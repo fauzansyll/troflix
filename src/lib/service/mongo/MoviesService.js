@@ -10,7 +10,7 @@ export default class MoviesService {
   }
 
   async getMovies() {
-    this.dummy();
+    // this.dummy();
     const movies = await this.moviesCollection.find({}).toArray();
 
     return movies;

@@ -35,7 +35,7 @@ export default function Home() {
           {moviesLoading ? (
             <MovieCardLoading />
           ) : (
-            movies.map((movie) => <MovieCard key={movie._id} movie={movie} />)
+            movies?.map((movie) => <MovieCard key={movie._id} movie={movie} />)
           )}
         </div>
       </div>
