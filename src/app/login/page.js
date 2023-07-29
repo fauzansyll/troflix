@@ -45,10 +45,12 @@ export default function Home() {
       if (res.status === 200) {
         const { accessToken, refreshToken } = res.data;
 
-        localStorage.setItem("accessToken", accessToken);
-        localStorage.setItem("refreshToken", refreshToken);
+        console.log(accessToken, refreshToken);
 
-        window.location.href = "/";
+        // localStorage.setItem("accessToken", accessToken);
+        // localStorage.setItem("refreshToken", refreshToken);
+
+        // window.location.href = "/";
       }
     } catch (error) {
       setToast({
